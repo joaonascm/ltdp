@@ -1,65 +1,62 @@
-﻿<html>
+<html>
 	<head>
-		  <title>  Cadastro do centro de interesses </title> 
-		 <style>
-		 /*isso e um comentario*/
-		    #container{
-				width: 60%;
-				height: 100%; 
-				margin: 0px auto 0px auto;
-				border-color: black;
-				border-style: solid;
-				border-width: 1px;
-				
-			}
-			#txt_name{
-			
-			}
-		</style>
-    </head>
-	
+		<!--
+			Essa tag indica a configuracao de acentuacao
+		-->
+		<meta charset="utf-8"></meta>
+		
+		<!--Vai aparecer na aba da pagina-->
+		<title>
+			Inscrição no centro de Interesse
+		</title>
+		
+		<!--A linha abaixo é responsável pela configuração visual da página. O estilo.css é um arquivo externo que deve estar dentro da pasta do projeto.-->
+		<!-- Essa linha é responsável para que a linha de código se adeque a qualquer dispositivo -->
+		
+		<link href="estilo.css" rel="stylesheet">
+		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/> 
+		<!-- Essa linha é responsável pelo recorte da imagem (movimento) em qualquer dispositivo, para melhor visualização . O javascript serve para que o HTML se torne dinamico  -->
+		    <script src="js/bootstrap.min.js"></script>
+		
+
+	</head>
 	<body>
-	<div id="container"> 
-			<center> <h2> Formulário de inscrição </h2> </center>	
-			
-			<form>
-				<br> <INPUT TYPE="text" placeholder=Nome SIZE="90" MAXLENGTH="60" id="Nome"><br>
-				<br> <INPUT TYPE="text" placeholder=CodigodoAluno SIZE="25" MAXLENGTH="60" id="Codigodoaluno">  <INPUT TYPE="text" placeholder=E-mail SIZE="40" MAXLENGTH="60" id="Emai-l"> </br>
+		<div id="container">
+			<h3> Formulário de Inscrição </h3>
+			<form action="#">
+				<input placeholder="Nome" type="text" id="txt_name"> <br /> <br />
 				
+				<input placeholder="Código do aluno" type="text" id="txt_codigo" />
+				<input placeholder="E-mail" type="text" id="txt_email"> <br /> <br />
 				
+				<select id="centro_um">
+					<option value="padrao"> Centro de Interesse 1 </option>
+					<option value="musica"> Música </option>
+					<option value="teatro"> Teatro </option>
+					<option value="programacao"> Programação </option>
+				</select>
+				<br /><br />
+				<select id="centro_dois">
+					<option value="padrao"> Centro de Interesse 2 </option>
+					<option value="musica"> Música </option>
+					<option value="teatro"> Teatro </option>
+					<option value="programacao"> Programação </option>
+				</select>
+				<br /><br />
+				<input type="checkbox" id="ckbox_confirma"> Declaro estar ciente, que não poderei trocar de centro de interesse durante o semestre
+				<br /><br />
+				<!-- The code btn class serves for what have a best visualisation -->
 				
-			<br> <select id="centroDeInteresse1" > </br>
-				<option value="centro_de_interesse_1">Centro de Interesse 1</option>
-				<option value="musica">musica</option>
-				<option value="teatro">teatro</option>
-				<option value="danca">danca</option>
-				<option value="espanhol">espanhol</option>
-				<option value="ingles">ingles</option>
-				<option value="futsal">futsal</option>
-			</select>
-			
-			
-			<select id="centro_de_Interesse_2" >
-			<option value="centro2">Centro de Interesse 2</option>
-				<option value="musica">Programacao</option>
-				<option value="teatro"></option>
-				<option value="danca">danca</option>
-				<option value="programacao">Programacao</option>
-			</select>
+<button type="button" class="btn btn-danger btn">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancelar </button>
+				
+				<button type="button" class="btn btn-success btn">
+  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Confirmar </button>
 			</form>
-			
-			
-			<form> 
-			<INPUT TYPE="checkbox" NAME="Declaro estar ciente, que nao poderei trocar de centro de interesse durante o semestre
-			" VALUE="op1"> Declaro estar ciente, que nao poderei trocar de centro de interesse durante o semestre
-		
-		<br> <button> cancelar </button> <button> confirmar </button> </br>
-		
-		</form>
-	</div>
-        
- 
-
-
-    </body>
+		</div>
+	<!--
+	https://github.com/terenciani/3-EMI
+	-->
+	
+	</body>
 </html>

@@ -1,0 +1,115 @@
+<body><html>
+	<head>
+		<!--
+			Essa tag indica a configuracao de acentuacao
+		-->
+		<meta charset="utf-8"></meta>
+		
+		<!--Vai aparecer na aba da pagina-->
+		    <title>
+        Exclusão do centro de interesse 
+			</title>
+		
+		<link href="estilo.css" rel="stylesheet">
+		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/> 
+		<!-- Essa linha é responsável pelo recorte da imagem (movimento) em qualquer dispositivo, para melhor visualização . O javascript serve para que o HTML se torne dinamico  -->
+		    <script src="js/bootstrap.min.js"></script>
+		
+		<style>
+		
+		/*Isso é um comentario*/
+#container{
+	/*background-color: blue; */
+	width: 40%; /*largura*/
+	height: 60%; /*altura*/
+	margin: 0px auto 0px auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	text-align:left;
+	padding-left: 20px;
+}
+#txt_centroum{
+	border-width: 1px;
+	width: 90%; /*largura*/
+	text-align:left;
+}
+#txt_{
+	border-width: 2px;
+	width: 90%; /*largura*/
+	text-align:left;
+}
+#txt_orientador{
+	border-width: 1px;
+	width: 90%; /*largura*/
+	text-align:left;
+}
+#txt_motivo{
+	border-width: 2px;
+	width: 50%; /*largura*/
+	height: 10% /*Altura*/
+	
+}
+#
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<br> <h3> Alteração do centro de interesse </h3> </br>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<select id="txt_centroum">
+						<option value="padrao"> Centro de Interesse  </option>
+						<option value="musica"> Música </option>
+						<option value="teatro"> Teatro </option>
+						<option value="programacao"> Programação </option>
+						<option value="padrao"> volley </option>
+						<option value="musica"> Música </option>
+						<option value="teatro"> Teatro </option>
+					<option value="programacao"> Programação </option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h5> Horario de inicio: </h5>
+				</div>
+				<div class="col-md-9">
+					<input type="time" type="text" id="txt_timein" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h5> Horario de término: </h5>
+				</div>
+				<div class="col-md-9">
+					<input type="time" type="text" id="txt_timeter" />
+				</div>
+			</div>
+			
+			<h5> Data de inicio:<input type="date" type="text" id="txt_datein" /> </h5> 
+			<h5> Data de termino:<input type="date" type="text" id="txt_dateter" /> </h5> 
+ 
+ <select id="txt_orientador">
+<option value="padrao"> Editar orientador </option>
+<option value="marcelo"> Música </option>
+<option value="teatro"> Teatro </option>
+<option value="programacao"> Programação </option>
+<option value="padrao"> volley </option>
+<option value="musica"> Música </option>
+<option value="teatro"> Teatro </option>
+<option value="programacao"> Programação </option>
+</select>
+<br /><br /> 			
+				
+				<button type="button" class="btn btn-danger btn"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancelar </button>
+				<button type="button" class="btn btn-success btn"> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Confirmar </button>
+			</form>
+		</div>
+	<!--
+	https://github.com/terenciani/3-EMI
+	-->
+	
+	</body>
+</html>

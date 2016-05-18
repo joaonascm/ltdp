@@ -1,0 +1,23 @@
+/*Isso é um comentario*/
+#container{
+	/*background-color: blue; */
+	width: 40%; /*largura*/
+	height: 60%; /*altura*/
+	margin: 0px auto 0px auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	text-align:center;
+}
+#txt_name{
+	border-width: 2px;
+	width: 90%; /*largura*/
+}
+#txt_codigo{
+	border-width: 2px;
+	width: 20%; /*largura*/
+}
+#txt_email{
+	border-width: 2px;
+	width: 70%; /*largura*/
+}
