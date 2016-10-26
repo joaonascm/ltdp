@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Inscrição do Centro de Interesse</title>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+		<link href="http://fontawesome.io/icon/barcode/">
+		<link href="estilo.css" rel="stylesheet" />
+		
+		<script>
+			function funcaoConfirmacao(){
+				alert("Estou ciente que não poderei trocar de curso durante o semestre!");
+			}
+		</script>
+	</head>
+<body>
+	<div class="testbox container">
+		<h1>Cadastro do Centro de Interesse</h1><br />
+		
+		<form action="#">
+			<div class="input-group margin-bottom-sm">
+				<span class="input-group-addon icon"><i class="fa fa-list"></i></span>
+				<input class="form-control" type="email" placeholder="Centro de Interesse" required name="nome-centro" id="nome-centro"/>
+			</div>
+			<br />
+   			<div class="input-group margin-bottom-sm">
+				<span class="input-group-addon icon"><i class="fa fa-user"></i></span>
+				<input class="form-control" type="text" placeholder="Orientador" required name="orientador" id="orientador"/>
+			</div>
+	    	<br />
+	    	<div class="input-group margin-bottom-sm">
+				<span class="input-group-addon icon"><i class="fa fa-child"></i></span>
+				<input class="form-control" type="number" placeholder="Quantidade de Vagas" required name="qtd-vagas" id="qtd-vagas"/>
+			</div>
+			<br />
+	    	<div class="input-group margin-bottom-sm">
+				<span class="input-group-addon icon"><i class="fa fa-barcode"></i></span>
+				<input class="form-control" type="text" placeholder="Código do aluno" required name="codigo-aluno" id="codigo-aluno"/>
+			</div>
+			
+			
+			<br />
+		
+<br />  
+  
+   
+   <div id="botao">
+  
+   
+   <input class="button" type="reset" value="Cancelar" />
+  	<input class="button" type="submit" onclick="funcaoConfirmacao()" value="Registrar" />
+     </div>
+  </form>
+</div>
+
+</body>
+</html>

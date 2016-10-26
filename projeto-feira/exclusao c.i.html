@@ -7,21 +7,25 @@
 		
 		<!--Vai aparecer na aba da pagina-->
 		    <title>
-        Exclusão do centro de interesse 
+       Exclusão do centro de interesse 
 			</title>
 		
-		<link href="estilo.css" rel="stylesheet">
+		
 		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/> 
 		<!-- Essa linha é responsável pelo recorte da imagem (movimento) em qualquer dispositivo, para melhor visualização . O javascript serve para que o HTML se torne dinamico  -->
 		    <script src="js/bootstrap.min.js"></script>
-		</head>
+		    
+		<link href="estilo.css" rel="stylesheet">
+		
+	</head>
+	<body>	
 		
 		<style>
 		
 		/*Isso é um comentario*/
 #container{
 	/*background-color: blue; */
-	width: 40%; /*largura*/
+	width: 60%; /*largura*/
 	height: 60%; /*altura*/
 	margin: 0px auto 0px auto;
 	border-color: black;
@@ -69,8 +73,9 @@
 </select>
 <br /><br />
 
- <h5> Horario de inicio:<input type="time" type="text" id="txt_timein" /> </h5> 
+ <h5> Horario de inicio:<input type="datetime" type="text" id="txt_timein" /> </h5> 
  <h5> Horario de termino:<input type="time" type="text" id="txt_timeter" />  </h5> 
+ 
  <h5> Data de inicio:<input type="date" type="text" id="txt_datein" /> </h5> 
  <h5> Data de termino:<input type="date" type="text" id="txt_dateter" /> </h5> 
  

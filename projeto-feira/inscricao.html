@@ -23,8 +23,8 @@
 	<body>
 		<div id="container">
 			<h3> Formulário de Inscrição </h3>
-			<form action="#">
-				<input placeholder="Nome" type="text" id="txt_name"> <br /> <br />
+			<form id="formulario" action="salvarinscricao.php" method="post">
+				<input placeholder="Nome" type="text" id="txt_name" name="nome"> <br /> <br />
 				
 				<input placeholder="Código do aluno" type="text" id="txt_codigo" />
 				<input placeholder="E-mail" type="text" id="txt_email"> <br /> <br />
@@ -50,7 +50,7 @@
 <button type="button" class="btn btn-danger btn">
   <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancelar </button>
 				
-				<button type="button" class="btn btn-success btn">
+				<button type="submit" class="btn btn-success btn">
   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Confirmar </button>
 			</form>
 		</div>

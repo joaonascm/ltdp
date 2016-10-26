@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link href='https://fonts.googleapis.com/css?family=Lobster'
+	rel='stylesheet' type='text/css'>
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="font-awesome-4.6.3/css/font-awesome.min.css">
+<link href="http://fontawesome.io/icon/barcode/">
+<link href="style-global.css" rel="stylesheet" />
+
+<title>Inserir Questão</title>
+</head>
+<body>
+
+	<div class="testbox container">
+
+		<h1>Inscrição de Questão</h1>
+		<form id="formulario" action="salvar-questao.php" method="post" >
+
+			<div>
+				<label>Questão</label> <input class="form-control" type="text"
+					name="questao" required>
+
+			</div>
+
+			<div>
+				<label>Enunciado</label> <input class="form-control" type="text"
+					name="enunciado" required>
+
+			</div>
+			<div class="col-md-6">
+				<label>Matéria</label> <select name="materia" id="materia"
+					class="form-control" required>
+					<option value="" selected>Selecione a matéria</option>
+					<option value="Inglês">Inglês</option>
+					<option value="Matemática">Matemática</option>
+					<option value="Língua Portuguesa">Língua Portuguesa</option>
+					<option value="Física">Física</option>
+					<option value="Outras">Outras</option>
+
+				</select>
+			</div>
+
+
+			<div class="col-md-6">
+				<label>Alternativa Correta</label> <select name="alternativacorreta"
+					id="alternativacorreta" class="form-control" required>
+					<option value="" selected>Selecione a alternativa correta</option>
+					<option value="alternativaum">Alternativa A</option>
+					<option value="alternativadois">Alternativa B</option>
+					<option value="alternativatres">Alternativa C</option>
+					<option value="alternativaquatro">Alternativa D</option>
+					<option value="alternativacinco">Alternativa E</option>
+				</select>
+			</div>
+
+			<br /> <br /> <br />
+
+			<div class="row">
+				<div class="col-md-6">
+					<label>Alternativa A</label>
+					<textarea class="form-control" rows="3" name="alternativaum" required></textarea>
+
+				</div>
+				<div class="col-md-6">
+					<label>Justificativa A</label>
+					<textarea class="form-control" rows="3" name="justificativaum" required></textarea>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label>Alternativa B</label>
+					<textarea class="form-control" rows="3" name="alternativadois" required> </textarea>
+				</div>
+				<div class="col-md-6">
+					<label>Justificativa B</label>
+					<textarea class="form-control" rows="3" name="justificativadois" required></textarea>
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label>Alternativa C</label>
+					<textarea class="form-control" rows="3" name="alternativatres" required></textarea>
+				</div>
+				<div class="col-md-6">
+					<label>Justificativa C</label>
+					<textarea class="form-control" rows="3" name="justificativatres" required></textarea>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<label>Alternativa D</label>
+					<textarea class="form-control" rows="3" name="alternativaquatro" required></textarea>
+				</div>
+				<div class="col-md-6">
+					<label>Justificativa D</label>
+					<textarea class="form-control" rows="3" name="justificativaquatro" required></textarea>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<label>Alternativa E</label>
+					<textarea class="form-control" rows="3" name="alternativacinco" required></textarea>
+				</div>
+				<div class="col-md-6">
+					<label>Justificativa E</label>
+					<textarea class="form-control" rows="3" name="justificativacinco" required></textarea>
+				</div>
+			</div>
+			<div id="botao">
+				<br />
+				<input class="button" type="reset" value="Cancelar" /> <input
+					class="button" type="submit" value="Confirmar" />
+			</div>
+		</form>
+	</div>
+
+
+
+</body>
+</html>

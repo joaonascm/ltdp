@@ -7,59 +7,24 @@
 		
 		<!--Vai aparecer na aba da pagina-->
 		    <title>
-        Exclusão do centro de interesse 
+        Alteração do centro de interesse 
 			</title>
 		
-		<link href="estilo.css" rel="stylesheet">
+		
 		<link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet"/> 
 		<!-- Essa linha é responsável pelo recorte da imagem (movimento) em qualquer dispositivo, para melhor visualização . O javascript serve para que o HTML se torne dinamico  -->
 		    <script src="js/bootstrap.min.js"></script>
+		    
+		<link href="estilo.css" rel="stylesheet">
 		
-		<style>
-		
-		/*Isso é um comentario*/
-#container{
-	/*background-color: blue; */
-	width: 50%; /*largura*/
-	height: 60%; /*altura*/
-	margin: 0px auto 0px auto;
-	border-color: black;
-	border-style: solid;
-	border-width: 1px;
-	text-align:;
-	padding-left: 20px;
-}
-#txt_centroum{
-	border-width: 1px;
-	width: 90%; /*largura*/
-	text-align:left;
-}
-#txt_{
-	border-width: 2px;
-	width: 90%; /*largura*/
-	text-align:left;
-}
-#txt_orientador{
-	border-width: 1px;
-	width: 90%; /*largura*/
-	text-align:left;
-}
-#txt_motivo{
-	border-width: 2px;
-	width: 50%; /*largura*/
-	height: 10% /*Altura*/
-	
-}
-#
-		</style>
 	</head>
 	<body>
-		<div id="container">
+		<div id="container" class="container">
 			<br> <h3> Alteração do centro de interesse </h3> </br>
 			
-			<div class="row">
+			<div class="row form-group">
 				<div class="col-md-12">
-					<select id="txt_centroum">
+					<select id="txt_centroum" class="form-control" >
 						<option value="padrao"> Centro de Interesse  </option>
 						<option value="musica"> Música </option>
 						<option value="teatro"> Teatro </option>
@@ -71,25 +36,18 @@
 					</select>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<h5> Horario de inicio: </h5>
+			<div class="row form-group">
+				<div class="col-md-6">
+
+					<label for="txt_timein">Horário de Início:</label>
+					<input type="time" class="form-control" id="txt_timein" />
+					
+					<label for="txt_timein">Horário de Termino:</label>
+					<input type="time" class="form-control" id="txt_timeter" />
 				</div>
-				<div class="col-md-9">
-					<input type="time" type="text" id="txt_timein" />
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<h5> Horario de término: </h5>
-				</div>
-				<div class="col-md-9">
-					<input type="time" type="text" id="txt_timeter" />
-				</div>
-			</div>
 			
-			<h5> Data de inicio:<input type="date" type="text" id="txt_datein" /> </h5> 
-			<h5> Data de termino:<input type="date" type="text" id="txt_dateter" /> </h5> 
+			<h5> Data de inicio:<input type="date"  id="txt_datein" /> </h5> 
+			<h5> Data de termino:<input type="date" id="txt_dateter" /> </h5> 
  
  <select id="txt_orientador">
 <option value="padrao"> Editar orientador </option>
